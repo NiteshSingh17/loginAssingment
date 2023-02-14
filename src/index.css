@@ -7,7 +7,134 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.loginContainer{
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginMain{
+  border: 1px solid #80808052;
+  border-radius: 10px;
+  padding: 20px 20px;
+  min-width: 300px;
+}
+
+label{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+input {
+  border-radius: 10px;
+  border-color: #80808040;
+  outline: none;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+#submitBt{
+  margin-top: 20px;
+  background-color: #008200a6;
+  color: white;
+  width: 100%;
+}
+
+.dashboardContainer{
+  padding: 50px 40px;
+  text-align: center;
+}
+.passwordBox{
+  margin-top: 20px;
+}
+button{
+  padding: 10px 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex{
+  display: flex;
+}
+.sidebar{
+  background-color: #2062ff78;
+  height: 100vh;
+  transition: all 0.3s;
+}
+.sidebar .navItems {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.sidebar #logoutBt{
+  color: red;
+  width: 100%;
+}
+.flex1{
+  flex-grow: 1;
+}
+.popupContianer{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  background-color: transparent;
+  backdrop-filter: blur(9px);
+}
+.popupBox{
+  padding: 20px;
+  min-width: 500px;
+  min-height: 215px;
+  background-color: white;
+  box-shadow: 0px 0px 34px -10px rgb(35 27 27 / 27%);
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+.danger{
+  background-color: red;
+  color: white;
+}
+.openPopup{
+  opacity: 1;
+  top: 0px;
+  z-index: 999;
+}
+.closePopup{
+  opacity: 0;
+  top: -20px;
+  z-index: -1;
+}
+.openDrawer{
+  min-width: 300px;
+}
+.closeDrawer{  
+  min-width: 50px;
+}
+#menuButton{
+  cursor: pointer;
+  padding: 10px;
+  transform-origin: left;
+  transition: all 0.2s;
+}
+#menuButton:hover{
+  transform: scale(1.1);
+}
+.menuBar{
+  width: 20px;
+  background-color: black;
+  height: 3px;
+  margin-top: 2px;
 }
